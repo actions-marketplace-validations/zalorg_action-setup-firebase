@@ -12,9 +12,10 @@ const run = async () => {
   if (!token) {
     throw new Error('Missing mandatory input: firebase-token')
   }
-
-  core.exportVariable('FIREBASE_TOKEN', token)
-  core.info('Exported environment variable FIREBASE_TOKEN')
+  if (token) {
+    core.exportVariable('FIREBASE_TOKEN', token)
+    core.info('Exported environment variable FIREBASE_TOKEN')
+  }
 
   if (await commandExists('npm')) {
     core.info('Detected NPM installation')
