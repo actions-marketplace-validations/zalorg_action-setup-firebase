@@ -9,9 +9,9 @@ const run = async () => {
   const token = core.getInput('firebase-token')
   const os = process.env.RUNNER_OS
 
-  if (!token) {
-    throw new Error('Missing mandatory input: firebase-token')
-  }
+  // if (!token) {
+  //   throw new Error('Missing mandatory input: firebase-token')
+  // }
   if (token) {
     core.exportVariable('FIREBASE_TOKEN', token)
     core.info('Exported environment variable FIREBASE_TOKEN')
