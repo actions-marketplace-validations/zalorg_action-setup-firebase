@@ -102,5 +102,5 @@ lib/**/*
 .vscode
 .idea
 
-lib/
-dist/
+# lib/
+# dist/

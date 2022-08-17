@@ -1,6 +1,6 @@
-name: Setup Firebase CLI
-description: Setup firebase-tools CLI
-author: Pocket Studios
+name: Setup Firebase CLI with Service Account
+description: Setup firebase-tools CLI with Service Account
+author: Edited by zal1000, Original by Pocket Studios
 branding:
   color: red
   icon: terminal
