@@ -7,7 +7,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
-        node: [with-node, without-node]
+        node: [with-node]
         exclude:
           - os: windows-latest
             node: without-node
